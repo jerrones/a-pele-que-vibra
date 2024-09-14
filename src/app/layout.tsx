@@ -1,19 +1,10 @@
-"use client";
-import localFont from "next/font/local";
-import { ThemeProvider } from "styled-components";
-import { defaultTheme } from "../styles/themes/default";
-import { GlobalStyle } from "../styles/global";
+import type { Metadata } from "next";
+import StyledComponentsRegistry from "../../lib/registry";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+export const metadata: Metadata = {
+  title: "A Pele que Vibra",
+  description: "Um projeto de Caio Oliveira",
+};
 
 export default function RootLayout({
   children,
@@ -21,12 +12,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <ThemeProvider theme={defaultTheme}>
-          {children}
-          <GlobalStyle />
-        </ThemeProvider>
+    <html lang="en">
+      <body>
+        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
       </body>
     </html>
   );
