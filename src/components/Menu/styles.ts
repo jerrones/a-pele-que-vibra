@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
 export const Menu = styled.div`
-  width: 20%;
-  height: 7vh;
+  height: 5vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 0.45rem;
 `;
 
 export const MenuItem = styled.button`
@@ -17,7 +18,7 @@ export const MenuItem = styled.button`
   color: #2b4fb8;
   background-color: #fff;
   width: 5.5rem;
-  height: 1.4rem;
+  height: 1.3rem;
   padding: 0.25rem;
   border: none;
   cursor: pointer;
