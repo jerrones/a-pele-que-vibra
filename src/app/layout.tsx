@@ -5,6 +5,9 @@ import { Montserrat } from "next/font/google";
 export const metadata: Metadata = {
   title: "A Pele que Vibra",
   description: "Um projeto de Caio Oliveira",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 const montserrat = Montserrat({
