@@ -4,15 +4,15 @@ import * as S from "./styles";
 export function Menu() {
   return (
     <S.Menu>
-      <S.MenuItem>
-        <Link href="/">Início</Link>
-      </S.MenuItem>
-      <S.MenuItem>
-        <Link href="/videos">Vídeos</Link>
-      </S.MenuItem>
-      <S.MenuItem>
-        <Link href="/galeria">Galeria</Link>
-      </S.MenuItem>
+      <Link href="/">
+        <S.MenuItem>Início</S.MenuItem>
+      </Link>
+      <Link href="/videos">
+        <S.MenuItem>Vídeos</S.MenuItem>
+      </Link>
+      <Link href="/galeria">
+        <S.MenuItem>Galeria</S.MenuItem>
+      </Link>
     </S.Menu>
   );
 }

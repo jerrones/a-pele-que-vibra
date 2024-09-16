@@ -31,5 +31,6 @@ export const MenuItem = styled.button`
 
   a {
     text-decoration: none;
+    width: 100%;
   }
 `;
