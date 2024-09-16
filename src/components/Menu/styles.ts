@@ -13,7 +13,7 @@ export const MenuItem = styled.button`
   font-family: "Montserrat", sans-serif;
   text-transform: lowercase;
   text-align: center;
-  font-weight: lighter;
+  font-weight: bold;
   letter-spacing: 2px;
   color: #2b4fb8;
   background-color: #fff;
